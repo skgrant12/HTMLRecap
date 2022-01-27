@@ -11,79 +11,96 @@
         <h1>School Ensemble/Instrument Selection</h1>
     </header>
     <nav> 
-        <a href= 
+        <ul>
+            <li>
+                <a href=.sample-site.html>School Website</a>
+            </li>
+            <li>
+                <a href=https://www.forbesmusic.com/picking-an-instrument-to-play/#:~:text=To%20find%20the%20instrument%20that,is%20probably%20your%20best%20bet.>Tips for Selecting an Instrument</a>
+            </li>
+        </ul>
     </nav>
-
     <form>
+        <section style="background-color:lightgrey">
+            <h2>Step 1 - Student Info</h2>
+            <fieldset>
+                <legend>Please fill out each field completely.</legend>
 
-    <h2>Step 1 - Student Info</h2>
-    <form>
-    <fieldset>
-        <legend>Please fill out each field completely.</legend>
-            <p>Your Name (First/Last)</p>
+                <p>Your Name (First/Last)</p>
                 <input type="text" required/>
-            
-            <p> Grade in School: </p>
-                <input type="radio" name="grade" id="grade6" value="grade6">
+
+                <p> Grade in School: </p>
+                    <input type="radio" name="grade" id="grade6" value="grade6">
                     <label for="grade6">6th</label>
                 <br/>
-                <input type="radio" name="grade" id="grade7" value="grade7">
+                    <input type="radio" name="grade" id="grade7" value="grade7">
                     <label for="grade7">7th</label>
                 <br />
-                <input type="radio" name="grade" id="grade8" value="grade8">
+                    <input type="radio" name="grade" id="grade8" value="grade8">
                     <label for="grade8">8th</label>
 
             <p> Parent Phone Number: </p>
                 <input type="tel" id="phone" name="phone">
 
             <p> Middle School Next Year: </p>
-            <input type="radio" name="school" id="northview" value="northview">
+                <input type="radio" name="school" id="northview" value="northview">
                 <label for="northview">Northview</label>
-            <br/>
-            <input type="radio" name="school" id="westlane" value="westlane">
+                <br/>
+                <input type="radio" name="school" id="westlane" value="westlane">
                 <label for="westlane">Westlane</label>
-            <br />
-            <input type="radio" name="school" id="eastwood" value="eastwood">
+                <br />
+                <input type="radio" name="school" id="eastwood" value="eastwood">
                 <label for="no">Eastwood</label>
             
             <p> Have you ever taken a music class before? </p>
                 <input type="radio" name="class" id="1year" value="1year">
-                    <label for="1year">Yes, for at least 1 year</label>
+                <label for="1year">Yes, for at least 1 year</label>
                 <br/>
                 <input type="radio" name="class" id="2year" value="2year">
-                    <label for="2year">Yes, for 2 years or more</label>
+                <label for="2year">Yes, for 2 years or more</label>
                 <br />
                 <input type="radio" name="class" id="no" value="no">
-                    <label for="no">No, never</label>
+                <label for="no">No, never</label>
                 <br />
                 <input type="radio" name="class" id="unsure" value="unsure">
-                    <label for="unsure">Not sure</label>
-     </fieldset>
-
-    <h2> Step 2 - Instrument Families</h2>
-    <fieldset>
-        <legend>Click on each video to hear an example of the instrument family.</legend>
-        <p>Brass</p>
-        <!---Embed videos here!-->
-        <p>Strings</p>
-        <p>Percussion</p>
-        <p>Woodwinds</p>
-    </fieldset>
-
-    <h2>Step 3 - Choose Your Ensemble </h2>
-    <fieldset>
-        <legend>What sounds do you like the most? Check all that apply.</legend>
-        <p>
-            <input type="checkbox" name="sounds" id="high-pitched" value="high-pitched" />
-            <label for="high-pitched">High-Pitched</label>
-        </p>
-        <p>
-            <input type="checkbox" name="sounds" id="mellow" value="mellow" />
-            <label for="guacamole">Guacamole</label>
-        </p>
-    </fieldset>
+                <label for="unsure">Not sure</label>
+            </fieldset>
+        </section>
+        <section style="background-color:lightgrey">
+            <h2> Step 2 - Instrument Families</h2>
+            <fieldset>
+                <legend>Click on each video to hear an example of the instrument family.</legend>
+                <p>Brass</p>
+                    <iframe src="https://www.youtube.com/embed/E0GRdRlkmyo" height="300"></iframe>
+                <p>Strings</p>
+                    <iframe src="https://www.youtube.com/embed/xznJAc2Cjk0" height="300"></iframe>
+                <p>Percussion</p>
+                    <iframe src="https://www.youtube.com/embed/LaXgEHBYT3c" height="300"></iframe>
+                <p>Woodwinds</p>
+                    <iframe src="https://www.youtube.com/embed/Uc1Thk1YOHY" height="300"></iframe>
+            </fieldset>
+        </section>
+        <section style="background-color:lightgrey">
+            <h2>Step 3 - Choose Your Ensemble </h2>
+            <fieldset>
+                <legend>What ensemble(s) are you interested in? Check all that apply.</legend>
+                <p>
+                    <input type="checkbox" name="ensemble" id="band" value="band" />
+                    <label for="band">Band</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="ensemble" id="choir" value="choir" />
+                    <label for="choir">Choir</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="ensemble" id="orchestra" value="orchestra" />
+                    <label for="orchestra">Orchestra</label>
+                </p>
+            </fieldset>
+        </section>
+    <br />
+    <input type="submit">
 </form>
 </body>
-</html>
 </html>
 
